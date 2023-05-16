@@ -1,0 +1,231 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, button {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  background-color: #1e0044;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+.header {
+  height: 110px;
+  background: rgba(18, 1, 39, 0.6);
+  display: flex;
+  align-items: center;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  &__logo {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    &-img {
+      width: 75px;
+    }
+
+    &-title {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 38px;
+      color: #fff;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 860px;
+    width: 100%;
+    gap: 30px;
+  }
+
+  &__nav {
+    max-width: 530px;
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__item-link {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 31px;
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    transition: all .2s linear;
+
+    &:hover {
+      border-color: #fff;
+    }
+  }
+
+  &__reg {
+    background: #ffd262;
+    border-radius: 10px;
+    width: 220px;
+    height: 55px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+    color: #191919;
+    transition: all .2s linear;
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+}
+
+.descr {
+  padding: 50px 0 150px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__info {
+    max-width: 855px;
+    width: 100%;
+
+    &-title {
+      font-weight: 700;
+      font-size: 65px;
+      line-height: 70px;
+      letter-spacing: -3px;
+      max-width: 505px;
+      width: 100%;
+      position: relative;
+      padding-top: 55px;
+      margin-bottom: 50px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        background: url('../images/rub.png') no-repeat center/cover;
+        width: 141px;
+        height: 139px;
+        bottom: -50px;
+        left: 165px;
+        z-index: 10;
+      }
+    }
+
+    &-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &-items {
+      max-width: 390px;
+      width: 100%;
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &-item {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 0.5px;
+      padding: 12px 20px;
+      background: #1573ff;
+      border-radius: 30px;
+      text-align: center;
+
+      &--wide {
+        width: 100%;
+      }
+    }
+
+    &-text {
+      font-weight: 700;
+      font-size: 33px;
+      line-height: 30px;
+      max-width: 370px;
+      width: 100%;
+    }
+  }
+
+  &__img {
+    max-width: 330px;
+    width: 100%;
+    position: relative;
+
+    & svg {
+      position: absolute;
+      top: 5px;
+      left: -155px;
+      z-index: 10;
+    }
+
+    & img {
+      width: 100%;
+      vertical-align: middle;
+    }
+
+    &-blur {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 385px;
+      height: 460px;
+      background: rgba(68, 21, 255, 0.5);
+      filter: blur(83.5206px);
+      z-index: -1;
+    }
+  }
+}
