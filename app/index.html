@@ -28,17 +28,17 @@
                     <nav class="header__nav">
                         <ul class="header__list">
                             <li class="header__item">
-                                <a class="header__item-link" href="#">
+                                <a class="header__item-link" href="#about">
                                     о чемпионате
                                 </a>
                             </li>
                             <li class="header__item">
-                                <a class="header__item-link" href="#">
+                                <a class="header__item-link" href="#news">
                                     новости
                                 </a>
                             </li>
                             <li class="header__item">
-                                <a class="header__item-link" href="#">
+                                <a class="header__item-link" href="#contacts">
                                     контакты
                                 </a>
                             </li>
@@ -48,6 +48,12 @@
                     <button class="header__reg">
                         Регистрация
                     </button>
+                </div>
+
+                <div class="header__burger">
+                    <div class="header__burger-line"></div>
+                    <div class="header__burger-line"></div>
+                    <div class="header__burger-line"></div>
                 </div>
             </div>
         </div>
@@ -104,7 +110,7 @@
         </section>
 
         <div class="content-box">
-            <section class="about">
+            <section class="about" id="about">
                 <div class="container">
                     <div class="about__inner">
                         <div class="about__subtitle subtitle">
@@ -160,7 +166,7 @@
                     </div>
                 </div>
             </section>
-
+<!--
             <section class="forwhat">
                 <div class="container">
                     <div class="forwhat__subtitle subtitle">
@@ -269,7 +275,7 @@
             </section>
         </div>
         <div class="content-box">
-            <section class="news">
+            <section class="news" id="news">
                 <div class="container">
                     <div class="news__subtitle subtitle">
                         новости
@@ -477,8 +483,77 @@
                     </form>
                 </div>
             </section>
+
+            <section class="contacts" id="contacts">
+                <div class="container">
+                    <div class="header__logo contacts__logo">
+                        <a href="#">
+                            <img class="header__logo-img contacts__logo-img" src="images/logo.png" alt="logo">
+                        </a>
+                        <a href="#">
+                            <h1 class="header__logo-title contacts__logo-title">ФИНСГРАМ</h1>
+                        </a>
+                    </div>
+
+                    <div class="contacts__inner">
+                        <div class="contacts__info">
+                            <p class="contacts__info-place">
+                                Хабаровский край, г. Хабаровск
+                            </p>
+                            <div>
+                                <a class="contacts__info-phone" href="tel:89227774014">8 (922) 777- 40- 14</a>
+                            </div>
+                            <div>
+                                <a class="contacts__info-email" href="mailto:club@finsgram.ru">club@finsgram.ru</a>
+                            </div>
+                            <div>
+                                <a class="contacts__info-vk" href="#">
+                                    <img src="images/vk.svg" alt="vk icon">
+                                </a>
+                            </div>
+                        </div>
+
+                        <img class="contacts__img" src="images/contacts-cup.webp" alt="contacts cup">
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h2 class="footer__title">
+                АВТОНОМНАЯ НЕКОММЕРЧЕСКАЯ ОРГАНИЗАЦИЯ ЦЕНТР РАЗВИТИЯ ЛИЧНЫХ И ПРОФЕССИОНАЛЬНЫХ КОМПЕТЕНЦИЙ "НАСТАВНИКИ"
+            </h2>
+            <div class="footer__line line"></div>
+
+            <div class="footer__inner">
+                <div class="footer__copyrights">
+                    © Финсграм 2022-2023. Все права защищены.
+                </div>
+                <nav class="footer__menu">
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">
+                                Общие положения
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">
+                                Регламент проведения чемпионата
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="#" class="footer__list-link">
+                                Политика обработки персональных данных
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+-->
 </body>
 
 </html>
