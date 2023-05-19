@@ -1727,7 +1727,7 @@ body {
   }
   .about {
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     &__inner {
       padding: 20px 20px;
     }
@@ -1758,7 +1758,7 @@ body {
     }
   }
   .forwhat {
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     &__items {
       margin-bottom: 40px;
     }
@@ -1770,6 +1770,10 @@ body {
       font-size: 20px;
       line-height: 26px;
     }
+  }
+  .forwhom {
+    padding-top: 0;
+    padding-bottom: 70px;
   }
   .forwhom__info {
     gap: 20px;
@@ -1789,7 +1793,7 @@ body {
     padding: 0 15px;
   }
   .news {
-    padding: 40px 0 60px 0;
+    padding: 0px 0 70px 0;
     &__text {
       font-size: 20px;
       line-height: 26px;
@@ -1799,7 +1803,7 @@ body {
     }
   }
   .organizer {
-    padding-bottom: 60px;
+    padding-bottom: 70px;
     &__info::before {
       display: none;
     }
@@ -1863,6 +1867,8 @@ body {
     }
   }
   .reg {
+    padding-top: 70px;
+    padding-bottom: 140px;
     &__form-title {
       height: 100px;
       font-size: 30px;
